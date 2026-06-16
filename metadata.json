@@ -1,0 +1,10 @@
+{
+  "name": "Vitaminapedia AI",
+  "description": "O dicionario e assistente de vitaminas, minerais e nutricao com Scanner de Rotulos por IA.",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

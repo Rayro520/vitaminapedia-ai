@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#022c22" />
+      <stop offset="60%" stop-color="#064e3b" />
+      <stop offset="100%" stop-color="#022c22" />
+    </linearGradient>
+    <!-- Accent Gradient -->
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399" />
+      <stop offset="50%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    <!-- Highlight Ring -->
+    <linearGradient id="ringGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#fbbf24" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#f59e0b" stop-opacity="0.2" />
+    </linearGradient>
+    <!-- Drop Shadow for Leaf -->
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#000" flood-opacity="0.4" />
+    </filter>
+  </defs>
+
+  <!-- Maskable background (required for modern PWA specs) -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)" />
+
+  <!-- Outer Ring (Electron orbit representing science / nutrition smarts) -->
+  <ellipse cx="256" cy="256" rx="190" ry="85" fill="none" stroke="url(#ringGrad)" stroke-width="6" transform="rotate(-30 256 256)" />
+  <circle cx="92" cy="162" r="10" fill="#f59e0b" />
+  <circle cx="420" cy="350" r="6" fill="#f59e0b" />
+
+  <!-- Main Capsule Icon Base (Modern design) -->
+  <g filter="url(#shadow)">
+    <!-- Pill Capsule (Diagonal) -->
+    <path d="M 170,170 C 130,210 130,270 170,310 L 310,170 C 270,130 210,130 170,170 Z" fill="#ffffff" opacity="0.9" />
+    <path d="M 200,342 C 240,382 300,382 340,342 L 340,170 L 170,340" fill="none" />
+    <path d="M 342,342 C 382,302 382,240 342,200 L 200,342 C 240,382 302,382 342,342 Z" fill="url(#accentGrad)" />
+  </g>
+
+  <!-- Vibrant Golden Star (representing vitality) -->
+  <polygon points="256,190 262,206 279,206 265,216 270,232 256,222 242,232 247,216 233,206 250,206" fill="#fbbf24" filter="url(#shadow)" />
+
+  <!-- Inside Symbol: Elegant Leaf ("V" shape representing Vitamins and Nature) -->
+  <path d="M236,256 C236,226 266,221 286,221 C286,251 251,281 236,256 Z" fill="#ffffff" opacity="0.4" />
+  <path d="M276,276 C276,246 306,241 326,241 C326,271 291,301 276,276 Z" fill="#ffffff" />
+
+  <!-- Text "V" representation -->
+  <text x="256" y="445" font-family="'Inter', sans-serif, system-ui" font-weight="900" font-size="52" fill="#34d399" text-anchor="middle" letter-spacing="1">VITA</text>
+</svg>

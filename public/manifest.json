@@ -1,0 +1,68 @@
+{
+  "id": "/index.html",
+  "name": "Vitaminapedia IA",
+  "short_name": "Vitaminapedia",
+  "description": "Dicionário e assistente de vitaminas, minerais e nutrição inteligente com Scanner de Rótulos por IA.",
+  "lang": "pt",
+  "dir": "ltr",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#0f172a",
+  "theme_color": "#f59e0b",
+  "categories": [
+    "books",
+    "education",
+    "health",
+    "fitness",
+    "medical"
+  ],
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Escanear Rótulo",
+      "short_name": "Escanear",
+      "description": "Escanear rótulo de suplemento ou alimento com IA",
+      "url": "/?action=scan",
+      "icons": [
+        {
+          "src": "/icon.svg",
+          "sizes": "any",
+          "purpose": "any"
+        }
+      ]
+    },
+    {
+      "name": "Dicionário",
+      "short_name": "Dicionário",
+      "description": "Explorar o guia completo de vitaminas e minerais",
+      "url": "/?action=dictionary",
+      "icons": [
+        {
+          "src": "/icon.svg",
+          "sizes": "any",
+          "purpose": "any"
+        }
+      ]
+    }
+  ]
+}
